@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="点击各个进度条开始执行进度加载"
+        android:textSize="20sp" />
+
+    <com.android.process.SportProgressView
+        android:id="@+id/view_sport_progress"
+        android:layout_width="228dp"
+        android:layout_height="124dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        app:spv_progressWidth="20dp" />
+
+    <com.android.process.DownloadProgressButton
+        android:id="@+id/dpb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp" />
+
+    <com.android.process.CustomCircleProgress
+        android:id="@+id/ccp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:max="100"
+        android:padding="1dp"
+        app:circle_radius="10dp"
+        app:progress_default_color="#ededee"
+        app:progress_default_height="2dp"
+        app:progress_reached_color="#fe3a3d" />
+
+</LinearLayout>
